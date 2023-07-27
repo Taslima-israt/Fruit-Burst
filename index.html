@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+
+<body class=>
+  <header class=" w-3/4 lg:w-[1200px] m-auto">
+    <section>
+      <div class="navbar bg-[#F85559;] my-12 lg:px-12 lg:py-2 rounded-full">
+        <div class="navbar-start ">
+          <div class="flex-wrap space-x-4 text-base text-white">
+            <a>Home</a>
+            <a>About Us</a>
+            <a>Shop</a>
+            <a>All Fruits</a>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <img src="images/logo.png">
+          <h1 class="text-3xl ml-2 text-white">Fruit Burst</h1>
+        </div>
+        <div class="navbar-end">
+          <div class="flex py-2">
+            <input type="text " placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full" />
+
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+
+      <div class="carousel w-full m-auto ">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content py-2">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-red-400 text-white text-xs font-bold border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(./images/banner2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn  bg-red-400 text-white text-xs font-bold border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(./images/banner3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn  bg-red-400 text-white text-xs font-bold border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full lg:h-[550px]">
+          <div class="hero " style="background-image: url(./images/banner4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products.</p>
+                <button class="btn  bg-red-400 text-white text-xs font-bold border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex border-x-gray-600 bg-white text-center absolute mx-auto lg:p-8 lg:-mt-20 lg:ml-60">
+        <a><img src="images/fruit1.png">
+          <p>Grapes</p>
+        </a>
+
+        <a><img src="images/fruit2.png">
+          <p>Orange</p>
+        </a>
+
+        <a><img src="images/fruit3.png">
+          <p>Mango</p>
+        </a>
+
+        <a><img src="images/fruit4.png">
+          <p>Strawberry</p>
+        </a>
+
+        <a><img src="images/fruit5.png">
+          <p>pomagrannate</p>
+        </a>
+
+      </div>
+    </section>
+  </header>
+  <main class="w-[1200px] m-auto">
+    <section class="my-32">
+      <div>
+        <div class=" flex lg:flex justify-between">
+          <div>
+            <h1 class="text-5xl font-bold  mb-5 text-[#121212]">Deal of the day</h1>
+            <p class="text-sm text-gray-500 mb-5">Contrary to popular belief, is not simply random text. It has roots in
+              a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono font-bold text-5xl">
+                  <span style="--value:29;"></span>:
+                </span>
+                days
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono font-bold text-5xl">
+                  <span style="--value:15;"></span>:
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono font-bold text-5xl">
+                  <span style="--value:25;">
+                  </span>:
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono font-bold text-5xl">
+                  <span style="--value:8;"></span>:
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <div class="card  p-14 border border-gray-400 ite">
+            <img class="w-32" src="images/fruit6.png">
+            <p class="font-bold">12.90$-18.85$</p>
+            <hr>
+            <p>Apples!</p>
+            <div class="rating justify-center my-5">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-red-400" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <img src="images/fruit6.png">
+                <h3 class="font-bold text-lg">Apples!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <div class="rating justify-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                  <button class="btn ">Close</button>
+                  <button class="btn  bg-red-400 text-white">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="card  p-16 border border-gray-400">
+            <img src="images/fruit7.png">
+            <p class="font-bold">12.90$-18.85$</p>
+            <hr>
+            <p>Oranges!</p>
+            <div class="rating justify-center my-5">
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-red-400" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <img src="images/fruit7.png">
+                <h3 class="font-bold text-lg">Oranges!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <div class="rating justify-center">
+                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                  <button class="btn ">Close</button>
+                  <button class="btn  bg-red-400 text-white ">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="card  p-16 border border-gray-400">
+            <img src="images/fruit8.png">
+            <p class="font-bold">12.90$-18.85$</p>
+            <hr>
+            <p>Red Dragons!</p>
+            <div class="rating justify-center my-5">
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-red-400" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <img src="images/fruit8.png">
+                <h3 class="font-bold text-lg">Red Dragons!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <div class="rating justify-center">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                  <button class="btn ">Close</button>
+                  <button class="btn bg-red-400 text-white ">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="card  p-16 border border-gray-400">
+            <img src="images/fruit9.png">
+            <p class="font-bold">12.90$-18.85$</p>
+            <hr>
+            <p>Bananas!</p>
+            <div class="rating justify-center my-5">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-red-400" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <img src="images/fruit9.png">
+                <h3 class="font-bold text-lg">Bananas!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <div class="rating justify-center">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                  <button class="btn ">Close</button>
+                  <button class="btn bg-red-400 text-white">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="hero h-[550px] my-20" style="background-image: url(./images/banner1.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="h-3/4 text-center">
+          <h1 class="text-5xl text-white text-bold mb-5">Meet the team section</h1>
+          <p class="text-white text-xs mb-20">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-cols-4 gap-20 mt-20">
+          <div class="text-center">
+            <img src="images/member1.png">
+            <h4 class="text-white font-bold">Awlad Hossain</h4>
+            <p class= "text-sm text-white">Fruits Expert</p>
+            <div class="flex justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4811)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M15.8018 10.5791L15.5604 12.6695C15.5504 12.7649 15.5057 12.8533 15.4348 12.9179C15.3639 12.9825 15.2718 13.0189 15.1759 13.02H12.9941L12.9832 19.2177C12.9839 19.2912 12.9557 19.362 12.9047 19.4148C12.8536 19.4676 12.7839 19.4982 12.7104 19.5H10.5C10.4632 19.5 10.4269 19.4926 10.393 19.4782C10.3592 19.4639 10.3287 19.4428 10.3032 19.4163C10.2777 19.3898 10.2578 19.3584 10.2448 19.3241C10.2318 19.2897 10.2258 19.2531 10.2273 19.2164V13.02H8.5909C8.5395 13.0195 8.48871 13.0088 8.44144 12.9887C8.39416 12.9685 8.35132 12.9392 8.31535 12.9025C8.27939 12.8658 8.25101 12.8223 8.23184 12.7746C8.21267 12.7269 8.20308 12.6759 8.20362 12.6245L8.19544 10.5341C8.19472 10.4825 8.20417 10.4313 8.22324 10.3834C8.24231 10.3355 8.27064 10.2918 8.3066 10.2548C8.34256 10.2178 8.38546 10.1883 8.43283 10.1679C8.48021 10.1475 8.53114 10.1366 8.58272 10.1359H10.2273V8.11773C10.2273 5.775 11.6182 4.5 13.6582 4.5H15.33C15.3817 4.50053 15.4328 4.51127 15.4803 4.53158C15.5278 4.5519 15.5709 4.5814 15.607 4.6184C15.6431 4.65539 15.6715 4.69915 15.6907 4.74716C15.7099 4.79517 15.7193 4.84649 15.7186 4.89818V6.65727C15.7193 6.70896 15.7099 6.76028 15.6907 6.8083C15.6715 6.85631 15.6431 6.90007 15.607 6.93706C15.5709 6.97405 15.5278 7.00355 15.4803 7.02387C15.4328 7.04419 15.3817 7.05492 15.33 7.05545H14.3045C13.1959 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4173C15.4727 10.1366 15.5273 10.149 15.5776 10.1723C15.6279 10.1957 15.6726 10.2294 15.709 10.2712C15.7453 10.3131 15.7723 10.3622 15.7883 10.4152C15.8043 10.4683 15.8089 10.5241 15.8018 10.5791Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4811">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4828)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M19.7731 7.17948C19.1885 7.43484 18.57 7.60448 17.9368 7.68317C18.6043 7.28738 19.1032 6.66035 19.3389 5.92106C18.7142 6.29185 18.0307 6.55299 17.3179 6.69317C16.8811 6.22603 16.3138 5.90115 15.6899 5.76078C15.066 5.6204 14.4142 5.67103 13.8194 5.90608C13.2247 6.14113 12.7144 6.54972 12.355 7.0787C11.9956 7.60768 11.8037 8.23258 11.8042 8.87211C11.802 9.11622 11.8268 9.35982 11.8784 9.59843C10.6105 9.53615 9.36993 9.20709 8.23783 8.63274C7.10572 8.05839 6.10752 7.25167 5.30841 6.26527C4.89766 6.96697 4.77041 7.79905 4.95266 8.59143C5.13491 9.38382 5.6129 10.0767 6.28894 10.5284C5.78434 10.5148 5.29043 10.38 4.84894 10.1353V10.17C4.85036 10.9055 5.10494 11.6181 5.5699 12.188C6.03486 12.7579 6.68184 13.1504 7.40209 13.2995C7.12952 13.3711 6.84864 13.4061 6.56683 13.4037C6.36391 13.4074 6.16118 13.3894 5.96209 13.35C6.16844 13.9826 6.56571 14.5357 7.09926 14.9332C7.6328 15.3307 8.27641 15.5532 8.94157 15.57C7.81439 16.451 6.42484 16.9296 4.9942 16.9295C4.73929 16.9317 4.48452 16.9169 4.23157 16.8853C5.69031 17.8258 7.39066 18.3227 9.1263 18.3158C14.9921 18.3158 18.1989 13.4574 18.1989 9.24632C18.1989 9.1058 18.1989 8.97001 18.1879 8.83422C18.8124 8.38349 19.3496 7.82276 19.7731 7.17948Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4828">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4834)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M9.3158 7.63737C9.31611 7.96166 9.22021 8.27875 9.04024 8.54851C8.86027 8.81828 8.60432 9.02859 8.30478 9.15284C8.00524 9.27708 7.67557 9.30967 7.3575 9.24648C7.03942 9.18329 6.74725 9.02716 6.51794 8.79786C6.28863 8.56855 6.13251 8.27637 6.06932 7.9583C6.00613 7.64023 6.03872 7.31056 6.16296 7.01102C6.28721 6.71148 6.49752 6.45552 6.76729 6.27556C7.03705 6.09559 7.35414 5.99969 7.67843 6C8.11256 6.00042 8.52879 6.17306 8.83576 6.48004C9.14274 6.78701 9.31538 7.20324 9.3158 7.63737Z" fill="white"/>
+                  <path d="M8.54052 9.95844H6.81631C6.5922 9.95844 6.41052 10.1401 6.41052 10.3642V17.5942C6.41052 17.8183 6.5922 18 6.81631 18H8.54052C8.76463 18 8.94631 17.8183 8.94631 17.5942V10.3642C8.94631 10.1401 8.76463 9.95844 8.54052 9.95844Z" fill="white"/>
+                  <path d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0333 10.2722 10.0058 10.3176 9.98693C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4834">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="images/member2.png">
+            <h4 class="text-white font-bold">Awlad Hossain</h4>
+            <p class= "text-sm text-white">Fruits Expert</p>
+            <div class="flex justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4811)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M15.8018 10.5791L15.5604 12.6695C15.5504 12.7649 15.5057 12.8533 15.4348 12.9179C15.3639 12.9825 15.2718 13.0189 15.1759 13.02H12.9941L12.9832 19.2177C12.9839 19.2912 12.9557 19.362 12.9047 19.4148C12.8536 19.4676 12.7839 19.4982 12.7104 19.5H10.5C10.4632 19.5 10.4269 19.4926 10.393 19.4782C10.3592 19.4639 10.3287 19.4428 10.3032 19.4163C10.2777 19.3898 10.2578 19.3584 10.2448 19.3241C10.2318 19.2897 10.2258 19.2531 10.2273 19.2164V13.02H8.5909C8.5395 13.0195 8.48871 13.0088 8.44144 12.9887C8.39416 12.9685 8.35132 12.9392 8.31535 12.9025C8.27939 12.8658 8.25101 12.8223 8.23184 12.7746C8.21267 12.7269 8.20308 12.6759 8.20362 12.6245L8.19544 10.5341C8.19472 10.4825 8.20417 10.4313 8.22324 10.3834C8.24231 10.3355 8.27064 10.2918 8.3066 10.2548C8.34256 10.2178 8.38546 10.1883 8.43283 10.1679C8.48021 10.1475 8.53114 10.1366 8.58272 10.1359H10.2273V8.11773C10.2273 5.775 11.6182 4.5 13.6582 4.5H15.33C15.3817 4.50053 15.4328 4.51127 15.4803 4.53158C15.5278 4.5519 15.5709 4.5814 15.607 4.6184C15.6431 4.65539 15.6715 4.69915 15.6907 4.74716C15.7099 4.79517 15.7193 4.84649 15.7186 4.89818V6.65727C15.7193 6.70896 15.7099 6.76028 15.6907 6.8083C15.6715 6.85631 15.6431 6.90007 15.607 6.93706C15.5709 6.97405 15.5278 7.00355 15.4803 7.02387C15.4328 7.04419 15.3817 7.05492 15.33 7.05545H14.3045C13.1959 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4173C15.4727 10.1366 15.5273 10.149 15.5776 10.1723C15.6279 10.1957 15.6726 10.2294 15.709 10.2712C15.7453 10.3131 15.7723 10.3622 15.7883 10.4152C15.8043 10.4683 15.8089 10.5241 15.8018 10.5791Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4811">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4828)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M19.7731 7.17948C19.1885 7.43484 18.57 7.60448 17.9368 7.68317C18.6043 7.28738 19.1032 6.66035 19.3389 5.92106C18.7142 6.29185 18.0307 6.55299 17.3179 6.69317C16.8811 6.22603 16.3138 5.90115 15.6899 5.76078C15.066 5.6204 14.4142 5.67103 13.8194 5.90608C13.2247 6.14113 12.7144 6.54972 12.355 7.0787C11.9956 7.60768 11.8037 8.23258 11.8042 8.87211C11.802 9.11622 11.8268 9.35982 11.8784 9.59843C10.6105 9.53615 9.36993 9.20709 8.23783 8.63274C7.10572 8.05839 6.10752 7.25167 5.30841 6.26527C4.89766 6.96697 4.77041 7.79905 4.95266 8.59143C5.13491 9.38382 5.6129 10.0767 6.28894 10.5284C5.78434 10.5148 5.29043 10.38 4.84894 10.1353V10.17C4.85036 10.9055 5.10494 11.6181 5.5699 12.188C6.03486 12.7579 6.68184 13.1504 7.40209 13.2995C7.12952 13.3711 6.84864 13.4061 6.56683 13.4037C6.36391 13.4074 6.16118 13.3894 5.96209 13.35C6.16844 13.9826 6.56571 14.5357 7.09926 14.9332C7.6328 15.3307 8.27641 15.5532 8.94157 15.57C7.81439 16.451 6.42484 16.9296 4.9942 16.9295C4.73929 16.9317 4.48452 16.9169 4.23157 16.8853C5.69031 17.8258 7.39066 18.3227 9.1263 18.3158C14.9921 18.3158 18.1989 13.4574 18.1989 9.24632C18.1989 9.1058 18.1989 8.97001 18.1879 8.83422C18.8124 8.38349 19.3496 7.82276 19.7731 7.17948Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4828">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4834)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M9.3158 7.63737C9.31611 7.96166 9.22021 8.27875 9.04024 8.54851C8.86027 8.81828 8.60432 9.02859 8.30478 9.15284C8.00524 9.27708 7.67557 9.30967 7.3575 9.24648C7.03942 9.18329 6.74725 9.02716 6.51794 8.79786C6.28863 8.56855 6.13251 8.27637 6.06932 7.9583C6.00613 7.64023 6.03872 7.31056 6.16296 7.01102C6.28721 6.71148 6.49752 6.45552 6.76729 6.27556C7.03705 6.09559 7.35414 5.99969 7.67843 6C8.11256 6.00042 8.52879 6.17306 8.83576 6.48004C9.14274 6.78701 9.31538 7.20324 9.3158 7.63737Z" fill="white"/>
+                  <path d="M8.54052 9.95844H6.81631C6.5922 9.95844 6.41052 10.1401 6.41052 10.3642V17.5942C6.41052 17.8183 6.5922 18 6.81631 18H8.54052C8.76463 18 8.94631 17.8183 8.94631 17.5942V10.3642C8.94631 10.1401 8.76463 9.95844 8.54052 9.95844Z" fill="white"/>
+                  <path d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0333 10.2722 10.0058 10.3176 9.98693C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4834">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="images/member3.png">
+            <h4 class="text-white font-bold">Awlad Hossain</h4>
+            <p class= "text-sm text-white">Fruits Expert</p>
+            <div class="flex justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4811)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M15.8018 10.5791L15.5604 12.6695C15.5504 12.7649 15.5057 12.8533 15.4348 12.9179C15.3639 12.9825 15.2718 13.0189 15.1759 13.02H12.9941L12.9832 19.2177C12.9839 19.2912 12.9557 19.362 12.9047 19.4148C12.8536 19.4676 12.7839 19.4982 12.7104 19.5H10.5C10.4632 19.5 10.4269 19.4926 10.393 19.4782C10.3592 19.4639 10.3287 19.4428 10.3032 19.4163C10.2777 19.3898 10.2578 19.3584 10.2448 19.3241C10.2318 19.2897 10.2258 19.2531 10.2273 19.2164V13.02H8.5909C8.5395 13.0195 8.48871 13.0088 8.44144 12.9887C8.39416 12.9685 8.35132 12.9392 8.31535 12.9025C8.27939 12.8658 8.25101 12.8223 8.23184 12.7746C8.21267 12.7269 8.20308 12.6759 8.20362 12.6245L8.19544 10.5341C8.19472 10.4825 8.20417 10.4313 8.22324 10.3834C8.24231 10.3355 8.27064 10.2918 8.3066 10.2548C8.34256 10.2178 8.38546 10.1883 8.43283 10.1679C8.48021 10.1475 8.53114 10.1366 8.58272 10.1359H10.2273V8.11773C10.2273 5.775 11.6182 4.5 13.6582 4.5H15.33C15.3817 4.50053 15.4328 4.51127 15.4803 4.53158C15.5278 4.5519 15.5709 4.5814 15.607 4.6184C15.6431 4.65539 15.6715 4.69915 15.6907 4.74716C15.7099 4.79517 15.7193 4.84649 15.7186 4.89818V6.65727C15.7193 6.70896 15.7099 6.76028 15.6907 6.8083C15.6715 6.85631 15.6431 6.90007 15.607 6.93706C15.5709 6.97405 15.5278 7.00355 15.4803 7.02387C15.4328 7.04419 15.3817 7.05492 15.33 7.05545H14.3045C13.1959 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4173C15.4727 10.1366 15.5273 10.149 15.5776 10.1723C15.6279 10.1957 15.6726 10.2294 15.709 10.2712C15.7453 10.3131 15.7723 10.3622 15.7883 10.4152C15.8043 10.4683 15.8089 10.5241 15.8018 10.5791Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4811">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4828)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M19.7731 7.17948C19.1885 7.43484 18.57 7.60448 17.9368 7.68317C18.6043 7.28738 19.1032 6.66035 19.3389 5.92106C18.7142 6.29185 18.0307 6.55299 17.3179 6.69317C16.8811 6.22603 16.3138 5.90115 15.6899 5.76078C15.066 5.6204 14.4142 5.67103 13.8194 5.90608C13.2247 6.14113 12.7144 6.54972 12.355 7.0787C11.9956 7.60768 11.8037 8.23258 11.8042 8.87211C11.802 9.11622 11.8268 9.35982 11.8784 9.59843C10.6105 9.53615 9.36993 9.20709 8.23783 8.63274C7.10572 8.05839 6.10752 7.25167 5.30841 6.26527C4.89766 6.96697 4.77041 7.79905 4.95266 8.59143C5.13491 9.38382 5.6129 10.0767 6.28894 10.5284C5.78434 10.5148 5.29043 10.38 4.84894 10.1353V10.17C4.85036 10.9055 5.10494 11.6181 5.5699 12.188C6.03486 12.7579 6.68184 13.1504 7.40209 13.2995C7.12952 13.3711 6.84864 13.4061 6.56683 13.4037C6.36391 13.4074 6.16118 13.3894 5.96209 13.35C6.16844 13.9826 6.56571 14.5357 7.09926 14.9332C7.6328 15.3307 8.27641 15.5532 8.94157 15.57C7.81439 16.451 6.42484 16.9296 4.9942 16.9295C4.73929 16.9317 4.48452 16.9169 4.23157 16.8853C5.69031 17.8258 7.39066 18.3227 9.1263 18.3158C14.9921 18.3158 18.1989 13.4574 18.1989 9.24632C18.1989 9.1058 18.1989 8.97001 18.1879 8.83422C18.8124 8.38349 19.3496 7.82276 19.7731 7.17948Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4828">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4834)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M9.3158 7.63737C9.31611 7.96166 9.22021 8.27875 9.04024 8.54851C8.86027 8.81828 8.60432 9.02859 8.30478 9.15284C8.00524 9.27708 7.67557 9.30967 7.3575 9.24648C7.03942 9.18329 6.74725 9.02716 6.51794 8.79786C6.28863 8.56855 6.13251 8.27637 6.06932 7.9583C6.00613 7.64023 6.03872 7.31056 6.16296 7.01102C6.28721 6.71148 6.49752 6.45552 6.76729 6.27556C7.03705 6.09559 7.35414 5.99969 7.67843 6C8.11256 6.00042 8.52879 6.17306 8.83576 6.48004C9.14274 6.78701 9.31538 7.20324 9.3158 7.63737Z" fill="white"/>
+                  <path d="M8.54052 9.95844H6.81631C6.5922 9.95844 6.41052 10.1401 6.41052 10.3642V17.5942C6.41052 17.8183 6.5922 18 6.81631 18H8.54052C8.76463 18 8.94631 17.8183 8.94631 17.5942V10.3642C8.94631 10.1401 8.76463 9.95844 8.54052 9.95844Z" fill="white"/>
+                  <path d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0333 10.2722 10.0058 10.3176 9.98693C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4834">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="images/member4.png">
+            <h4 class="text-white font-bold">Awlad Hossain</h4>
+            <p class= "text-sm text-white">Fruits Expert</p>
+            <div class="flex justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4811)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M15.8018 10.5791L15.5604 12.6695C15.5504 12.7649 15.5057 12.8533 15.4348 12.9179C15.3639 12.9825 15.2718 13.0189 15.1759 13.02H12.9941L12.9832 19.2177C12.9839 19.2912 12.9557 19.362 12.9047 19.4148C12.8536 19.4676 12.7839 19.4982 12.7104 19.5H10.5C10.4632 19.5 10.4269 19.4926 10.393 19.4782C10.3592 19.4639 10.3287 19.4428 10.3032 19.4163C10.2777 19.3898 10.2578 19.3584 10.2448 19.3241C10.2318 19.2897 10.2258 19.2531 10.2273 19.2164V13.02H8.5909C8.5395 13.0195 8.48871 13.0088 8.44144 12.9887C8.39416 12.9685 8.35132 12.9392 8.31535 12.9025C8.27939 12.8658 8.25101 12.8223 8.23184 12.7746C8.21267 12.7269 8.20308 12.6759 8.20362 12.6245L8.19544 10.5341C8.19472 10.4825 8.20417 10.4313 8.22324 10.3834C8.24231 10.3355 8.27064 10.2918 8.3066 10.2548C8.34256 10.2178 8.38546 10.1883 8.43283 10.1679C8.48021 10.1475 8.53114 10.1366 8.58272 10.1359H10.2273V8.11773C10.2273 5.775 11.6182 4.5 13.6582 4.5H15.33C15.3817 4.50053 15.4328 4.51127 15.4803 4.53158C15.5278 4.5519 15.5709 4.5814 15.607 4.6184C15.6431 4.65539 15.6715 4.69915 15.6907 4.74716C15.7099 4.79517 15.7193 4.84649 15.7186 4.89818V6.65727C15.7193 6.70896 15.7099 6.76028 15.6907 6.8083C15.6715 6.85631 15.6431 6.90007 15.607 6.93706C15.5709 6.97405 15.5278 7.00355 15.4803 7.02387C15.4328 7.04419 15.3817 7.05492 15.33 7.05545H14.3045C13.1959 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4173C15.4727 10.1366 15.5273 10.149 15.5776 10.1723C15.6279 10.1957 15.6726 10.2294 15.709 10.2712C15.7453 10.3131 15.7723 10.3622 15.7883 10.4152C15.8043 10.4683 15.8089 10.5241 15.8018 10.5791Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4811">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4828)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M19.7731 7.17948C19.1885 7.43484 18.57 7.60448 17.9368 7.68317C18.6043 7.28738 19.1032 6.66035 19.3389 5.92106C18.7142 6.29185 18.0307 6.55299 17.3179 6.69317C16.8811 6.22603 16.3138 5.90115 15.6899 5.76078C15.066 5.6204 14.4142 5.67103 13.8194 5.90608C13.2247 6.14113 12.7144 6.54972 12.355 7.0787C11.9956 7.60768 11.8037 8.23258 11.8042 8.87211C11.802 9.11622 11.8268 9.35982 11.8784 9.59843C10.6105 9.53615 9.36993 9.20709 8.23783 8.63274C7.10572 8.05839 6.10752 7.25167 5.30841 6.26527C4.89766 6.96697 4.77041 7.79905 4.95266 8.59143C5.13491 9.38382 5.6129 10.0767 6.28894 10.5284C5.78434 10.5148 5.29043 10.38 4.84894 10.1353V10.17C4.85036 10.9055 5.10494 11.6181 5.5699 12.188C6.03486 12.7579 6.68184 13.1504 7.40209 13.2995C7.12952 13.3711 6.84864 13.4061 6.56683 13.4037C6.36391 13.4074 6.16118 13.3894 5.96209 13.35C6.16844 13.9826 6.56571 14.5357 7.09926 14.9332C7.6328 15.3307 8.27641 15.5532 8.94157 15.57C7.81439 16.451 6.42484 16.9296 4.9942 16.9295C4.73929 16.9317 4.48452 16.9169 4.23157 16.8853C5.69031 17.8258 7.39066 18.3227 9.1263 18.3158C14.9921 18.3158 18.1989 13.4574 18.1989 9.24632C18.1989 9.1058 18.1989 8.97001 18.1879 8.83422C18.8124 8.38349 19.3496 7.82276 19.7731 7.17948Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4828">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_11_4834)">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F85559"/>
+                  <path d="M9.3158 7.63737C9.31611 7.96166 9.22021 8.27875 9.04024 8.54851C8.86027 8.81828 8.60432 9.02859 8.30478 9.15284C8.00524 9.27708 7.67557 9.30967 7.3575 9.24648C7.03942 9.18329 6.74725 9.02716 6.51794 8.79786C6.28863 8.56855 6.13251 8.27637 6.06932 7.9583C6.00613 7.64023 6.03872 7.31056 6.16296 7.01102C6.28721 6.71148 6.49752 6.45552 6.76729 6.27556C7.03705 6.09559 7.35414 5.99969 7.67843 6C8.11256 6.00042 8.52879 6.17306 8.83576 6.48004C9.14274 6.78701 9.31538 7.20324 9.3158 7.63737Z" fill="white"/>
+                  <path d="M8.54052 9.95844H6.81631C6.5922 9.95844 6.41052 10.1401 6.41052 10.3642V17.5942C6.41052 17.8183 6.5922 18 6.81631 18H8.54052C8.76463 18 8.94631 17.8183 8.94631 17.5942V10.3642C8.94631 10.1401 8.76463 9.95844 8.54052 9.95844Z" fill="white"/>
+                  <path d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0333 10.2722 10.0058 10.3176 9.98693C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_4834">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="text-center">
+        <h1 class="text-4xl font-bold  mb-5 text-[#121212]">Why Choose Us</h1>
+        <p class="text-sm text-gray-500 mb-5">Contrary to popular belief, is not simply random text. It has roots in
+          a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <div class="flex gap-12 mb-24x mt-12">
+        <div class="flex-col">
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+            <h1 class="font-bold">
+              Dedicated Team
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+            <h1 class="font-bold">
+              Fresh is Best
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z"/></svg>
+            <h1 class="font-bold">
+              Gift Certificates
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+        </div>
+        <div>
+          <img src="images/whychoose1.png">
+        </div>
+        <div class=" flex-col">
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M368 80c-3.2 0-6.2 .4-8.9 1.3C340 86.8 313 91.9 284.8 84.6C227.4 69.7 160.2 92 110.1 142.1S37.7 259.4 52.6 316.8c7.3 28.2 2.2 55.2-3.3 74.3c-.8 2.8-1.3 5.8-1.3 8.9c0 17.7 14.3 32 32 32c3.2 0 6.2-.4 8.9-1.3c19.1-5.5 46.1-10.7 74.3-3.3c57.4 14.9 124.6-7.4 174.7-57.5s72.4-117.3 57.5-174.7c-7.3-28.2-2.2-55.2 3.3-74.3c.8-2.8 1.3-5.8 1.3-8.9c0-17.7-14.3-32-32-32zm0-48c44.2 0 80 35.8 80 80c0 7.7-1.1 15.2-3.1 22.3c-4.6 15.8-7.1 32.9-3 48.9c20.1 77.6-10.9 161.5-70 220.7s-143.1 90.2-220.7 70c-16-4.1-33-1.6-48.9 3c-7.1 2-14.6 3.1-22.3 3.1c-44.2 0-80-35.8-80-80c0-7.7 1.1-15.2 3.1-22.3c4.6-15.8 7.1-32.9 3-48.9C-14 251.3 17 167.3 76.2 108.2S219.3 18 296.8 38.1c16 4.1 33 1.6 48.9-3c7.1-2 14.6-3.1 22.3-3.1zM246.7 167c-52 15.2-96.5 59.7-111.7 111.7c-3.7 12.7-17.1 20-29.8 16.3s-20-17.1-16.3-29.8c19.8-67.7 76.6-124.5 144.3-144.3c12.7-3.7 26.1 3.6 29.8 16.3s-3.6 26.1-16.3 29.8z"/></svg>
+            <h1 class="font-bold">
+              Integrated Supplier
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M367.1 160c.6-5.3 .9-10.6 .9-16C368 64.5 303.5 0 224 0S80 64.5 80 144c0 5.4 .3 10.7 .9 16H80c-26.5 0-48 21.5-48 48s21.5 48 48 48h53.5 181H368c26.5 0 48-21.5 48-48s-21.5-48-48-48h-.9zM96 288L200.8 497.7c4.4 8.8 13.3 14.3 23.2 14.3s18.8-5.5 23.2-14.3L352 288H96z"/></svg>
+            <h1 class="font-bold">
+              Sustainable Practice
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+          <div class="flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.1s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"/></svg>
+            <h1 class="font-bold">
+              The Benefits Only
+            </h1>
+            <hr class="border-1 border-gray-500 w-[100px]">
+            <p class="text-sm text-gray-500 mb-5">
+              Professional employees are there for you to pick the most amazing and fresh fruits.
+            </p>
+  
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer footer-center w-full p-10 bg-[#121212;] text-base-content rounded">
+    <div class="flex mb-0">
+      <img src="images/logo.png">
+      <h1 class="text-4xl text-white text-bold ">Fruit Burst</h1>
+    </div>
+    <div class="grid grid-flow-col gap-4">
+      <a class=" text-white link link-hover">Home</a>
+      <a class="text-white link link-hover">About us</a>
+      <a class="text-white link link-hover">Shop</a>
+      <a class="text-white link link-hover">All Fruits</a>
+      <a class="text-white link link-hover">Support</a>
+      <a class="text-white link link-hover">My account</a>
+    </div>
+    <div>
+      <div class="grid grid-flow-col gap-4">
+        <a class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg></a>
+        <a class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg></a>
+        <a class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg></a>
+        <a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
